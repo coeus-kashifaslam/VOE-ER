@@ -1,0 +1,27 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700";
+
+%font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+%font-roboto-regular {
+  @extend %font-roboto;
+  font-weight: 400;
+}
+
+%font-roboto-bold {
+  @extend %font-roboto;
+  font-weight: 700;
+}
+
+body {
+  @extend %font-roboto;
+  font-size: $font-size-regular;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include 'template/_core/head.html' %}
+</head>
+<body>
+    {% include 'template/_core/nav.html' %}
+
+    {% block content %} {% endblock %}
+
+	{% block abbasi %} {% endblock %}    
+
+    {% include 'template/_core/footer.html' %}
+    {% include 'template/_core/scripts.html' %}
+</body>
+</html>
