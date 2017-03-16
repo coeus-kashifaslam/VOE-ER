@@ -25,3 +25,21 @@ body {
   &::-moz-placeholder          {@content}
   &:-ms-input-placeholder      {@content}
 }
+
+
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}
+
+
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}

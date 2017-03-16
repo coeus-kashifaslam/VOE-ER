@@ -1,0 +1,32 @@
+.reviews_paging{
+	h2{
+		border-bottom: #f4f4f4 1px solid;
+		padding-left: 24px;
+		padding-bottom: 5px;
+	}
+
+	.reviews_paging_footer{
+		padding-left: 24px;
+		padding-right: 24px;
+		p{
+			margin-bottom: 0;
+		}
+	}
+
+	.list__quick-link {
+		margin: 0;
+		li{
+		    &.active a{
+		      font-weight: bold;
+		    }
+			&:after {
+		    	background: #c4c4c4;
+			}
+		}
+	}
+
+	.sort_div{
+		width: 186px;
+    	text-align: right;
+	}
+}
