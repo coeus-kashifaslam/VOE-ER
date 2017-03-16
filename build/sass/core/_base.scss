@@ -3,6 +3,9 @@ body {
   &.inner-pages{
     background: $bg-color;
 
+    .hero-article{
+      margin-top: 75px;
+    }
     .navbar-brand{
       .without_white_header{
         display: none;

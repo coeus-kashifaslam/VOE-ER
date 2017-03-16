@@ -20,7 +20,7 @@
     "gulp-imacss": "^1.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-jshint": "^2.0.0",
-    "gulp-newer": "^1.1.0",
+    "gulp-newer": "^1.3.0",
     "gulp-nunjucks": "^2.3.0",
     "gulp-pleeease": "^2.0.2",
     "gulp-sass": "^2.3.0",
