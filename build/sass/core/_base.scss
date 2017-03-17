@@ -3,9 +3,9 @@ body {
   &.inner-pages{
     background: $bg-color;
 
-    .hero-article{
+    article.hero-article{
       margin-top: 75px;
-      height: 267px;
+      height: 288px;
     }
 
     .navbar-brand{
@@ -74,6 +74,7 @@ body {
     border: $border-color 1px solid;
     padding: 10px 0;
     margin-bottom: 15px;
+    position: relative;
   }
 
 
@@ -91,10 +92,17 @@ body {
     @extend %font-roboto-regular;
 
     &:hover{
+      cursor:pointer;
       text-decoration:none;
     }
   }
 
   strong{
     font-weight: bold;
+  }
+
+
+
+  .mb15{
+    margin-bottom: 15px;
   }

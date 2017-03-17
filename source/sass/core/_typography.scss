@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700";
 
+
 %font-roboto {
   font-family: 'Roboto', sans-serif;
 }
@@ -40,6 +41,13 @@ h1,
 h2,
 .h2 {
   font-size: $font-size-h2;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
   @extend %font-roboto-bold;
   margin: 0 0 10px 0;
 }
