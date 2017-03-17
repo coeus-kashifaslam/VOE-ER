@@ -71,7 +71,7 @@
 
 .review-content-box{
 	background: $grey;
-	padding: 25px 45px 0;
+	padding: 25px 25px 0;
 }
 
 .review-footer-box{
@@ -144,7 +144,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
 	.review-content-box {
 	    background: #f2f2f2;
-	    padding: 25px 35px 0;
+	    padding: 25px 25px 0;
 	}
 
 	.inner-pages article.hero-article{
@@ -155,6 +155,15 @@
 
 @media (max-width: 767px) {
 
+	.star-rating-container{
+		margin: 0 auto;
+    	max-width: 300px;
+	}
+	
+	.recommendation-status{
+		width: 100%;
+		clear: both;
+	}
 	.inner-pages article.hero-article{
 		margin-bottom: 27px;
     	min-height: 300px;
@@ -164,6 +173,7 @@
 	.reviews_paging{
 		h2{
 			border: 0;
+			text-align: center;
 		}
 
 		.reviews_paging_footer{
