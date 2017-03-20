@@ -105,3 +105,36 @@ body {
     list-style: none;
   }
 
+.pagingControls{
+  ul{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    li{
+      display: inline-block;
+      margin: 0 -2px;
+      a{
+        background: #fff;
+        border: #f1eff1 1px solid;
+        padding: 5px 10px;
+        color: $light-black-color;
+        font-size: 14px;
+      }
+
+      &.active{
+        a{
+          background: $default-theme;
+          border: transparent 1px solid;
+          color: $white;
+        }
+      }
+
+      &.prev, &.next{
+        a{
+          border: 0;
+        }
+      }
+    }
+  }
+}
