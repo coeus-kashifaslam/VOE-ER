@@ -1,33 +1,83 @@
 .sprites{
   li{
-    a{
+    a{  
       span{
+        color: $light-black-color;
+        font-size: $font-size-regular;
+        @extend %font-roboto-regular;
+
         &.icon{
           background: url(../images/icons/sprite.png);
           height: 26px;
           width: 30px;
           display: inline-block;
           vertical-align: middle;
+          margin-left: 20px;
             
           &.icon-overview{
-            background-position: 0 0;
+            background-position: 0 4px;
           }
           &.icon-reviews{
-            background-position: 0 0;
+            background-position: 0 -25px;
           }
           &.icon-salaries{
-            background-position: 0 0;
+            background-position: 0 -56px;
           }
           &.icon-jobs{
-            background-position: 0 0;
+            background-position: 0 -87px;
           }
           &.icon-interveiws{
-            background-position: 0 0;
+            background-position: 0 -119px;
           }
           &.icon-benifits{
-            background-position: 0 0;
+            background-position: 0 -151px;
           }
         }
+      }
+    }
+
+    &:hover, &.active{
+      a{
+        span{    
+          cursor: pointer;
+          font-weight: bold;
+
+          &.icon{              
+            &.icon-overview{
+              background-position: -31px 4px;
+            }
+            &.icon-reviews{
+              background-position: -31px -25px;
+            }
+            &.icon-salaries{
+              background-position: -31px -56px;
+            }
+            &.icon-jobs{
+              background-position: -31px -87px;
+            }
+            &.icon-interveiws{
+              background-position: -31px -119px;
+            }
+            &.icon-benifits{
+              background-position: -31px -151px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.side-menu{
+  ul{
+    li{
+      border-bottom: $border-grey 1px solid;
+      padding:11px 0;
+      .icon{
+        margin-right: 10px;
+      }
+      &:last-child{
+        border-bottom:0;
       }
     }
   }
@@ -122,7 +172,7 @@
 
   .sub-menu-open{
     .expand-menu{
-      margin-left: 10px;
+      /*margin-left: 10px;*/
     }
   }
 }

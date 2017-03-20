@@ -57,71 +57,80 @@
     <div class="main-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-3  mb30">
-                    <div class="box">
-                        <div class="side-menu sprites">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="icon icon-overview"></span>
-                                        <span class="menu-label">Overview</span>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="#">
-                                        <span class="icon icon-reviews"></span>
-                                        <span class="menu-label">Reviews</span>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="#">
-                                        <span class="icon icon-salaries"></span>
-                                        <span class="menu-label">Salaries</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="icon icon-jobs"></span>
-                                        <span class="menu-label">Jobs</span>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="#">
-                                        <span class="icon icon-interveiws"></span>
-                                        <span class="menu-label">Interviews</span>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="#">
-                                        <span class="icon icon-benifits"></span>
-                                        <span class="menu-label">Interviews</span>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="col-md-12">
+                    <div class="col-md-12 visible-xs visible-sm MobileMenu">
+                    <div class="box no-b-p">
+                       <a class="submenu-link">Sub Menu</a>
+                        <div class="sub-menu-open" style="display:none;">
+                              <div class="col-md-12">
+                                <div class=" no-t-p no-b-p">
+                                    <div class="side-menu sprites">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon icon-overview"></span>
+                                                    <span class="menu-label">Overview</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-reviews"></span>
+                                                    <span class="menu-label">Reviews</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-salaries"></span>
+                                                    <span class="menu-label">Salaries</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon icon-jobs"></span>
+                                                    <span class="menu-label">Jobs</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-interveiws"></span>
+                                                    <span class="menu-label">Interviews</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-benifits"></span>
+                                                    <span class="menu-label">Interviews</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
 
 
                 <div class="col-md-9">
                      <div class="row mb30">
-                <div class="col-md-12">
-                    <div class="box">
-                        <div class="reviews_paging">
-                            <h2>eKomi Reviews</h2>
-                            <div class="reviews_paging_footer clearfix">
-                                    <p class="pull-left reviews_paging_footer_label">Showing <strong>1–10 </strong> of <strong>724</strong> Companies</p>
-                                    <div class="pull-right clearfix sort_div">
-                                        <p class="pull-left sortby">Sort By: </p> 
-                                        <ul class="list-inline list__quick-link list__divider-bar">
-                                            <li class="active"><a href="#">Popular</a></li>
-                                            <li><a href="#">Rating</a></li>
-                                        </ul>
+                        <div class="col-md-12">
+                            <div class="box">
+                                <div class="reviews_paging">
+                                    <h2>eKomi Reviews</h2>
+                                    <div class="reviews_paging_footer clearfix">
+                                            <p class="pull-left reviews_paging_footer_label">Showing <strong>1–10 </strong> of <strong>724</strong> Companies</p>
+                                            <div class="pull-right clearfix sort_div">
+                                                <p class="pull-left sortby">Sort By: </p> 
+                                                <ul class="list-inline list__quick-link list__divider-bar">
+                                                    <li class="active"><a href="#">Popular</a></li>
+                                                    <li><a href="#">Rating</a></li>
+                                                </ul>
+                                            </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
 
             <div class="row mb30">
@@ -269,9 +278,19 @@
         </div>
     </div>
 </footer>
-    <script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/jquery.min.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/blazy.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+
+
+    $(document).ready(function(){
+        $(".submenu-link").click(function(){
+            $('.sub-menu-open').slideToggle(function(){
+            });
+        });
+    });
+</script>
 </body>
 </html>
