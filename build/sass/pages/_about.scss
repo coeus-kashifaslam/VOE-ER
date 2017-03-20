@@ -5,7 +5,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.content-section{
 		padding:30px 9px;
 		h2, p strong{
@@ -20,4 +20,8 @@
 	.inner-pages .hero-article{
 		display: none;
 	}
+
+	.inner-pages  .site-main{
+      margin-top: 115px;
+    }
 }

@@ -46,6 +46,11 @@
             color: $light-black-color;
             font-size: $font-size-regular;
             @extend %font-roboto-bold;
+            display: inline-flex;
+            vertical-align: top;
+            padding-left: 5px;
+            width: 100%;
+
             &.collapsed{
               .caret{
                 transform:rotate(-90deg);
@@ -57,6 +62,10 @@
               border-top: 4px solid \9;
               border-right: 6px solid transparent;
               border-left: 6px solid transparent;
+              margin-left: -5px;
+              margin-top: 4px;
+              margin-right: 5px;
+
             }
           }
         }
@@ -75,6 +84,8 @@
                 color: $light-black-color;
                 font-size: $font-size-regular;
                 @extend %font-roboto-regular;
+                display: block;
+                padding-right: 5px;
 
                 &.active,{
                   @extend %font-roboto-bold;
@@ -88,6 +99,30 @@
             }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .MobileMenu{
+    position: fixed;
+    width: 111%;
+    top: 47px;
+    z-index: 99;
+    left: -18px;
+  }
+
+  .submenu-link{
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    display: block;
+    color: #29a00a;
+  }
+
+  .sub-menu-open{
+    .expand-menu{
+      margin-left: 10px;
     }
   }
 }
