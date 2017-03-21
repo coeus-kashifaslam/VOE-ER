@@ -5,6 +5,10 @@
         color: $light-black-color;
         font-size: $font-size-regular;
         @extend %font-roboto-regular;
+        &.numbers{
+          color: rgba($light-black-color, .60);
+          font-weight: bold;
+        }
 
         &.icon{
           background: url(../images/icons/sprite.png);
@@ -12,7 +16,6 @@
           width: 30px;
           display: inline-block;
           vertical-align: middle;
-          margin-left: 20px;
             
           &.icon-overview{
             background-position: 0 4px;
@@ -37,11 +40,11 @@
     }
 
     &:hover, &.active{
-      a{
-        span{    
-          cursor: pointer;
-          font-weight: bold;
-
+      cursor: pointer;
+      a{ 
+        span{       
+          color: black;
+          @extend %font-roboto-bold;
           &.icon{              
             &.icon-overview{
               background-position: -31px 4px;
@@ -73,8 +76,8 @@
     li{
       border-bottom: $border-grey 1px solid;
       padding:11px 0;
-      .icon{
-        margin-right: 10px;
+      span{
+        margin: 0 10px;
       }
       &:last-child{
         border-bottom:0;
@@ -89,6 +92,11 @@
     .panel{
       border: 0;
       border-radius: 0;
+      box-shadow: none;
+      border-bottom:$border-grey 1px solid;
+      &:last-child{
+        border:0;
+      }
       .panel-heading{
         background: transparent;
         .panel-title{
@@ -100,6 +108,10 @@
             vertical-align: top;
             padding-left: 5px;
             width: 100%;
+
+            &:hover{
+              opacity:.7;
+            }
 
             &.collapsed{
               .caret{
@@ -174,5 +186,16 @@
     .expand-menu{
       /*margin-left: 10px;*/
     }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .side-menu ul li{
+    padding-right: 60px;
+  }
+
+  .side-menu{
+    margin-left: -15px;
   }
 }
