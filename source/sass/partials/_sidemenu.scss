@@ -174,7 +174,6 @@
   .MobileMenu{
     position: fixed;
     width: 100%;
-    top: 47px;
     z-index: 99;
     left: 0;
     padding: 0;
@@ -191,5 +190,16 @@
     display: block;
     color: #29a00a;
   }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .MobileMenu{
+    top: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .MobileMenu{
+    top: 47px;
+  }
 }

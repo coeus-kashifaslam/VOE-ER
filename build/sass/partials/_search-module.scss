@@ -1,8 +1,53 @@
 .search-wrapper {
 	background-color: $search-color;
 	padding: 14px 0;
-	margin: 80px 0 0 0;
+	margin: 76px 0 0 0;
 	min-height: 72px;
+
+	.form-group {
+		input {
+			&.form-control {
+				box-shadow: rgba(0,0,0,.28) 0px 1px 1px;
+				border-radius: 5px;
+				padding: 0 15px;
+				margin-right: 10px;
+				height: 40px;
+    			line-height: 40px;
+
+				&.companyName{
+					width: 342px;
+				}
+
+				&.location{
+					width: 240px;
+				}
+			}
+		}
+	}
+
+	.company-dd{
+		background: $white;
+		padding: 0 15px;
+	    box-shadow: rgba(0,0,0,.28) 0px 1px 1px;
+	    border-radius: 5px;
+	    border: #ccc 1px solid;
+	    color: #a4a4a4;
+	    min-width: 240px;
+	    margin-right: 10px;
+	    height: 40px;
+   	    line-height: 40px;
+	}
+
+	.form-inline{
+		button.btn{
+			box-shadow: rgba(0,0,0,.28) 0px 1px 1px;
+			border-radius: 5px;
+			height: 40px;
+   	   		line-height: 40px;
+   	   		padding-top: 0;
+   	   		padding-bottom: 0;
+		}
+	}
 
 	@media (min-width: 1199px) {
 		.container-fluid {
@@ -10,32 +55,10 @@
 		    padding-right: 0;
 		}
 
-		.form-group {
-			input {
-				&.form-control {
-					width: 400px;
-					&.location {
-						width: 150px;
-					}
-				}
-			}
-		}
+		
 	}
 
-	.form-group {
-		input {
-			
-			&.form-control {
-				border-radius: 0;
-				padding: 20px 15px;
-				margin-right: 10px;
 
-				&.location {
-					width: 150px;
-				}
-			}
-		}
-	}
 	
 	.btn {
 		&.btn-success {
@@ -55,4 +78,66 @@
 
 .search-wrapper + main.site-main{
 	margin-top: 50px;
+}
+
+
+@media (max-width: 1023px) {
+	.search-wrapper {
+		 margin: 90px 0 0;
+		.form-group {
+			input {
+				&.form-control {
+					width: 100%;
+					&.companyName{
+						width: 100%;
+					}
+
+					&.location{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.company-dd{
+			min-width: 100%;
+		}
+
+		.form-inline{
+			button.btn{
+			
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	.search-wrapper {
+		 margin: 90px 0 0;
+		.form-group {
+			input {
+				&.form-control {
+					width: 100%;
+					&.companyName{
+						width: 100%;
+					}
+
+					&.location{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.company-dd{
+			width: 100%;
+		}
+
+		.form-inline{
+			button.btn{
+				width: 100%;
+			}
+		}
+	}
 }
