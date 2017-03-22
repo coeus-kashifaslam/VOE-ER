@@ -1,0 +1,39 @@
+{% set bodyClass = "homepage" %}
+{% extends 'template/_layout/default.html' %}
+{% set pageTitle = "Index" %}
+
+{% block content %}
+
+{% include 'template/_components/hero.html' %}
+
+<main class="site-main" role="main">
+    <div class="main-wrapper">
+        <div class="container">
+            <section class="home-page__double">
+            	<div class="col-md-12">
+            		<h2>Home Page Content goes here</h2>
+            	</div>
+	        	<div class="col-md-6">
+	        		<div class="content-box">
+	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quis soluta assumenda facere necessitatibus, aspernatur temporibus accusantium vero est consequuntur, cumque voluptate. Asperiores sunt vitae minus, at ea natus nemo.</p>
+	        		</div>
+	        	</div>
+	        	<div class="col-md-6">
+	        		<div class="content-box">
+	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum similique esse necessitatibus magni aut error enim accusantium labore praesentium porro asperiores voluptatum, facilis sequi sint impedit minus iste eum aperiam.</p>
+	        		</div>
+	        	</div>
+        	</section> <!-- double boxes section end -->
+        	<div class="clearfix"></div>
+        	<section class="home-page__single">
+	        	<div class="col-md-12 mt33">
+	        		<div class="content-box">
+	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aperiam labore voluptas porro accusantium veritatis corrupti sed dolor quisquam quos. Aperiam totam incidunt, at recusandae consequuntur sit illum reiciendis, tenetur!</p>
+	        		</div>
+	        	</div>
+        	</section> <!-- single box section ends -->
+        </div>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,25 +1,29 @@
 $text-dark: 			#333;
-$white: #fff;
+$white: 				#fff;
 $text-placeholder: 		#adadad;
 
 $default-theme: 		#29a00a;
-$default-background:	#ebebeb;
+$default-background: 	#ebebeb;
+
+$light-gray: 			#f5f5f5;
 
 
-$font-size-regular: 16px;
-$font-size-md: $font-size-regular + 2;
-$font-size-lg: $font-size-regular + 4;
-$font-size-h1: 45px;
-$font-size-h2: 25px;
-$font-size-h3: 23px;
+$font-size-regular: 	16px;
+$font-size-md: 			$font-size-regular + 2;
+$font-size-lg: 			$font-size-regular + 4;
+$font-size-h1: 			45px;
+$font-size-h2: 			25px;
+$font-size-h3: 			23px;
 
-$font-size-tab: $font-size-regular - 2;
-$font-size-mobile: $font-size-regular - 5;
+$font-size-tab: 		$font-size-regular - 2;
+$font-size-mobile: 		$font-size-regular - 5;
+
+$font-color-green:		#29a00a;
+$black:					#000000;
 
 $border-footer: 		#606060;
 $border-default: 		#e3e1e4;
 $border-dark: 			#ccc;
-
 $light-black-color: 	#282828;
 $bg-color: 				#f5f5f5;
 $blue-color:        	#2256ff;
@@ -32,4 +36,5 @@ $light-grey:            #e7e7e7;
 $border-grey:           #ddd;
 $review-content:        #444;
 $review-icon-color:     #b8b8b8;
-$caret:                 #4cb032;
+$caret: 				#4cb032;
+$search-color:          #e5e5e5;

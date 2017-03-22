@@ -1,0 +1,27 @@
+.content-section{
+	padding:15px 28px;
+	p, h2{
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 991px) {
+	.content-section{
+		padding:30px 9px;
+		h2, p strong{
+			font-size: 28px;
+		}
+
+		p{
+			font-size: 20px;
+		}
+	}
+
+	.inner-pages .hero-article{
+		display: none;
+	}
+
+	.inner-pages  .site-main{
+      margin-top: 115px;
+    }
+}

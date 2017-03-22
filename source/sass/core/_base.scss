@@ -1,41 +1,44 @@
 body {
   background: $white;
-  &.inner-pages{
-    background: $bg-color;
+  
+    &.inner-pages{
+      background: $bg-color;
 
-    article.hero-article{
-      margin-top: 75px;
-      height: 288px;
-    }
-
-
-    .navbar-brand{
-      .without_white_header{
-        display: none;
+      article.hero-article{
+        margin-top: 75px;
+        height: 270px;
+        margin-bottom: -75px;
       }
 
-      .with_white_header{
-        display: block;
+      .navbar-brand{
+        .without_white_header{
+          display: none;
+        }
+
+        .with_white_header{
+          display: block;
+        }
       }
-    }
-    nav.navbar{
-      background: $white;
-      li{
-        &.nav-item__featured{
+      nav.navbar{
+        background: $white;
+        box-shadow: rgba(0, 0, 0, .28) 0 1px 6px;
+        
+        li{
+          &.nav-item__featured{
+            a{
+              color: $white;
+            }
+          }
           a{
-            color: $white;
+            color: $light-black-color;
           }
         }
-        a{
-          color: $light-black-color;
-        }
+      }
+
+      .site-main{
+        margin-top: 120px;
       }
     }
-
-    .site-main{
-      /*margin-top: 100px;*/
-    }
-  }
 }
 @media (min-width: 1199px) {
   .container-fluid {
@@ -43,7 +46,12 @@ body {
     padding-right: 30px;
   }
 }
-
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}
 
 //Bar divider list
 .list__divider-bar {
@@ -92,57 +100,60 @@ body {
     font-size: $font-size-regular;
     @extend %font-roboto-regular;
 
-    &:hover,  &:focus{
-      cursor:pointer;
-      text-decoration:none;
+    &:hover, &:focus {
+        cursor: pointer;
+        text-decoration: none;
     }
   }
 
   strong{
     font-weight: bold;
   }
-
-  ul{
+  .mb15{
+    margin-bottom: 15px;
+  }
+  .mb30{
+    margin-bottom: 30px;
+  }
+ul {
     list-style: none;
-    padding:0;
-    margin: 0;
-  }
-
-.pagingControls{
-  ul{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-    margin: 0;
     padding: 0;
-
-    li{
-      display: inline-block;
-      margin: 5px -2px;
-      a{
-        background: #fff;
-        border: #f1eff1 1px solid;
-        padding: 5px 10px;
-        color: $light-black-color;
-        font-size: 14px;
-      }
-
-      &.active{
-        a{
-          background: $default-theme;
-          border: transparent 1px solid;
-          color: $white;
-        }
-      }
-
-      &.prev, &.next{
-        a{
-          border: 0;
-        }
-      }
-    }
-  }
+    margin: 0;
 }
+.pagingControls {
+    ul {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin: 5px -2px;
+            a {
+                background: #fff;
+                border: #f1eff1 1px solid;
+                padding: 5px 10px;
+                color: $light-black-color;
+                font-size: 14px;
+            }
+            &.active {
+                a {
+                    background: $default-theme;
+                    border: transparent 1px solid;
+                    color: $white;
+                }
+            }
+            &.prev,
+            &.next {
+                a {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+

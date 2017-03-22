@@ -1,4 +1,5 @@
-.sprites{
+//CSS Srprites
+.sprites {
   li{
     a{  
       span{
@@ -43,8 +44,8 @@
       cursor: pointer;
       a{ 
         span{       
-          color: black;
-          @extend %font-roboto-bold;
+          color: $black;
+
           &.icon{              
             &.icon-overview{
               background-position: -31px 4px;
@@ -71,6 +72,7 @@
   }
 }
 
+//Side Mneu
 .side-menu{
   ul{
     li{
@@ -86,10 +88,10 @@
   }
 }
 
-.expand-menu{
-  .panel-group{
+.expand-menu {
+  .panel-group {
     margin-bottom: 0;
-    .panel{
+    .panel {
       border: 0;
       border-radius: 0;
       box-shadow: none;
@@ -97,10 +99,10 @@
       &:last-child{
         border:0;
       }
-      .panel-heading{
+      .panel-heading {
         background: transparent;
-        .panel-title{
-          a{
+        .panel-title {
+          a {
             color: $light-black-color;
             font-size: $font-size-regular;
             @extend %font-roboto-bold;
@@ -109,7 +111,7 @@
             padding-left: 5px;
             width: 100%;
 
-            &:hover{
+            &:hover {
               opacity:.7;
             }
 
@@ -126,30 +128,29 @@
               border-left: 6px solid transparent;
               margin-left: -5px;
               margin-top: 4px;
-              margin-right: 5px;
-
+              margin-right: 15px;
             }
           }
         }
       }
-      .panel-body{
+      .panel-body {
         padding: 0;
-         .sub-menu{
+         .sub-menu {
             padding: 0;
             margin: 0;
-            li{
+            li {
               border-bottom: $border-grey 1px solid;
               padding: 9px 0;
               padding-left: 56px;
 
-              a{
+              a {
                 color: $light-black-color;
                 font-size: $font-size-regular;
                 @extend %font-roboto-regular;
                 display: block;
                 padding-right: 5px;
 
-                &.active,{
+                &.active, {
                   @extend %font-roboto-bold;
                   color: $default-theme;
                 }
@@ -158,6 +159,10 @@
                   color: $default-theme;
                 }
               }
+
+              &:last-child {
+                border-bottom: none;
+              }
             }
         }
       }
@@ -165,16 +170,21 @@
   }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .MobileMenu{
     position: fixed;
-    width: 111%;
+    width: 100%;
     top: 47px;
     z-index: 99;
-    left: -18px;
+    left: 0;
+    padding: 0;
+
+    .box {
+      border-radius: 0;
+    }
   }
 
-  .submenu-link{
+  .submenu-link {
     font-size: 16px;
     margin-left: 15px;
     margin-bottom: 8px;
@@ -182,20 +192,4 @@
     color: #29a00a;
   }
 
-  .sub-menu-open{
-    .expand-menu{
-      /*margin-left: 10px;*/
-    }
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 1023px){
-  .side-menu ul li{
-    padding-right: 60px;
-  }
-
-  .side-menu{
-    margin-left: -15px;
-  }
 }

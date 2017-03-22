@@ -1,0 +1,48 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700";
+
+%font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+%font-roboto-regular {
+  @extend %font-roboto;
+  font-weight: 400;
+}
+
+%font-roboto-bold {
+  @extend %font-roboto;
+  font-weight: 700;
+}
+
+body {
+  @extend %font-roboto;
+  font-size: $font-size-regular;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}

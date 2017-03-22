@@ -1,14 +1,16 @@
 .hero-wrapper {
   width: 100%;
   max-width: 730px;
+  margin: 0 auto;
 }
 .hero__description {
   margin-bottom: 60px;
-  @media (max-width: 767px) {
+    @media (max-width: 767px) {
     display: none;
   }
 }
 .hero__title {
+  text-align: center;
   @media (max-width: 767px) {
     text-align: center;
   }
@@ -122,11 +124,9 @@
   }
 }
 
-
-
 .hero-article {
   position: relative;
-  height: 740px;
+  height: 500px;
   vertical-align: middle;
   overflow: hidden;
   width: 100%;
@@ -184,9 +184,6 @@
     }
   }
 }
-
-
-
 
 .hero-article__bg {
   .carousel-control {

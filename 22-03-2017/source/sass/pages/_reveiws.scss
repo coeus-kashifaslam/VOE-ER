@@ -1,0 +1,271 @@
+.reviews_paging{
+	h2{
+		border-bottom: #f4f4f4 1px solid;
+		padding-left: 24px;
+		padding-bottom: 5px;
+	}
+
+	.reviews_paging_footer{
+		padding-left: 24px;
+		padding-right: 24px;
+		p{
+			margin-bottom: 0;
+		}
+	}
+
+	.list__quick-link {
+		margin: 0;
+		li{
+
+			a{
+				color: $light-black-color;
+			}
+
+		    &.active a{
+		      color: $blue-color;
+		      font-weight: bold;
+		    }
+			&:after {
+		    	background: #c4c4c4;
+			}
+		}
+	}
+
+	.sort_div{
+		width: 186px;
+    	text-align: right;
+	}
+}
+
+.logo_box{
+	@extend .box;
+	width: 93px;
+    height: 87px;
+    text-align: center;
+    line-height: 87px;
+    padding: 0;
+    margin: -22px 0 0 18px;
+}
+.review-header-box{
+	border-bottom: $border-color 1px solid;
+	padding-right: 20px;
+	padding-bottom: 15px;
+
+	.btn{
+		margin-top: 15px;
+	}
+}
+
+.review-header{
+	margin-left: 19px;
+	padding-top: 10px;
+
+	h3{
+		margin-bottom: 0;
+	}
+
+	p{
+		font-size: 14px;
+	}
+}
+
+.review-content-box{
+	background: $grey;
+	padding: 25px 25px 0;
+}
+
+.review-footer-box{
+	padding: 10px 20px 0;
+	p{
+		color: $review-content;
+	}
+}
+
+.rating-section{
+	float: left;
+	/*width: 300px;*/
+
+	.rating-title{
+		font-weight: normal !important;
+		font-size: 22px;
+		float: left;
+		margin-left: 10px;
+		@extend %font-roboto-regular;
+
+		strong{
+			font-size: 23px;
+			@extend %font-roboto-bold;
+		}
+	}
+}
+
+
+.rating-listings {
+	float: right;
+	ul{
+		li{
+			border-right: $border-grey  1px solid;
+			padding: 0 30px;
+
+			&:last-child {
+				border-right:0;
+			}
+
+			span{
+				display: block;
+				color: $light-black-color;
+			    font-size: $font-size-regular;
+			    @extend %font-roboto-regular;
+			    margin-bottom: 10px;
+			    &.icon{
+			    	color: $review-icon-color;
+			    	font-size: 30px;
+			    }
+			}
+		}
+	}
+}
+
+.star-full{
+	background-image: url(../images/icons/stars-gray.png);
+	background-repeat: no-repeat;
+	height: 27px;
+	width: 184px;
+	margin: 0 0 10px 0;
+}
+
+.star-selected{
+	background-image: url(../images/icons/stars-yellow.png);
+	background-repeat: no-repeat;
+	height: 27px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.review-content-box {
+	    background: #f2f2f2;
+	    padding: 25px 25px 0;
+	}
+
+	.inner-pages article.hero-article{
+    	min-height: 300px;
+    	margin-top: 56px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.star-rating-container{
+		margin: 0 auto;
+    	max-width: 300px;
+	}
+	
+	.recommendation-status{
+		width: 100%;
+		clear: both;
+	}
+	.inner-pages article.hero-article{
+		margin-bottom: 27px;
+    	min-height: 300px;
+    	margin-top: 29px !important;
+	}
+
+	.reviews_paging{
+		h2{
+			border: 0;
+			text-align: center;
+		}
+
+		.reviews_paging_footer{
+			padding: 0;
+			.reviews_paging_footer_label{
+			    text-align: center;
+			    float: none !important;
+			    border-bottom: #ccc 1px solid;
+			    margin-bottom: 13px;
+			    padding-bottom: 11px;
+			}
+
+			.sortby{
+				display: none;
+			}
+		}
+
+		.sort_div {
+		    width: 100%;
+		    text-align: center;
+		}
+	}
+
+	.review-header{
+		margin-left: 10px;
+		width: 51%;
+		position: relative;
+	}
+
+	.review-header-box {
+		position: relative;
+
+		.addBtnMobile{
+			position: absolute;
+			top: 13px;
+			right: 10px;
+		}
+	}
+
+	.review-content-box{
+		padding: 0;
+	}
+	.rating-section{
+	    float: none;
+	    margin: 0 0 0 4px;
+	    margin-top: 30px;
+
+	    .rating-title{
+	    	font-size: 28px;
+	    	strong{
+	    		font-size: 28px;
+	    	}
+	    }
+
+	   p{
+	   		color: $review-content;
+    		font-size: 20px;
+    	}
+	}
+
+	.rating-listings{
+		float: none;
+		ul{
+			li{
+				padding: 0 15px;
+				span{
+					strong{
+						display: block;
+					}
+				}
+
+				.icon{
+					display: none;
+				}
+			}
+		}
+	}
+
+	.star-full{
+		background-image: url(../images/icons/stars-gray-mobile.png);
+		height: 34px;
+		width: 229px;
+	}
+
+	.star-selected{
+		background-image: url(../images/icons/stars-yellow-mobile.png);
+		height: 34px;
+	}
+
+	.logo_box {
+	    width: 80px;
+	    height: 80px;
+	    margin: -22px 0 0 12px;
+	}
+}

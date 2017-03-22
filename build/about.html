@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Page</title>
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<body class="inner-pages">
+<body class="inner-pages about-us">
     <nav class="navbar navbar-fixed-top site-nav">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,12 +24,12 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="feedback__mobile">
-                    <a href="#"><img src="images/icons-active/feedback-icon.png" alt="..." class="img-responsive icon-active" />
+                    <a href="#"><img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="images/icons-active/feedback-icon.png" alt="..." class="b-lazy img-responsive icon-active">
                 </a>
             </div>
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="..." class="img-responsive without_white_header">
-                <img src="images/logo-active.png" alt="..." class="img-responsive navbar-brand__mobile with_white_header">
+                <img src="images/logo.png" alt="..." class="img-responsive">
+                <img src="images/logo-active.png" alt="..." class="img-responsive navbar-brand__mobile">
             </a>
         </div>
 
@@ -39,7 +39,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Flag</a></li>
                 <li><a href="#">Jobs</a></li>
-                <li><a href="#">Company Reviews</a></li>
+                <li><a href="company-review.html">Company Reviews</a></li>
                 <li><a href="#">Salaries</a></li>
                 <li><a href="#">Interviews</a></li>
                 <li class="nav-item__featured"><a href="#">Write Review</a></li>
@@ -49,9 +49,12 @@
     </div><!-- /.container-fluid -->
 </nav>
 
- <article class="hero-article">
-    <img src="images/banner.jpg" alt="..."  />
- </article>   
+    
+
+<article class="hero-article">
+	<img src="../images/banner.jpg" alt="inner page banner"  />
+</article>
+
 
 <main class="site-main">
     <div class="main-wrapper">
@@ -218,7 +221,8 @@
         </div>
     </div>
 </main>
-     
+
+
 
     <footer id="site-footer">
     <div class="footer-wrap">
@@ -226,7 +230,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <ul class="list-inline list__quick-link list__divider-bar">
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#">Employer Review</a></li>
                         <li><a href="#">Employer Center</a></li>
                         <li><a href="#">Terms of Use</a></li>
@@ -235,7 +239,9 @@
                 </div>
                 <div class="col-md-5 contact__links">
                     <ul class="list-inline list__quick-link list__divider-bar">
-                        <li class="item__lg"><span class="icon-call"><img src="images/icons/icon-mobile.png" alt="..." class="img-responsive"></span><span>Call 1-800-eKomi</span></li>
+                        <li class="item__lg"><span class="icon-call">
+                        <img src="images/icons/icon-mobile.png" alt="mobile" class="img-responsive">
+                        </span><span>Call 1-800-eKomi</span></li>
                     </ul>
                 </div>
                 <!--<div class="clearfix"></div>-->
@@ -250,9 +256,8 @@
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/blazy.min.js"></script>
 <script src="js/script.js"></script>
+<!-- Toggle Side Menu -->
 <script>
-
-
     $(document).ready(function(){
         $(".submenu-link").click(function(){
             $('.sub-menu-open').slideToggle(function(){

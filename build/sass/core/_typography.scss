@@ -1,6 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700";
 
-
 %font-roboto {
   font-family: 'Roboto', sans-serif;
 }
@@ -27,16 +26,12 @@ body {
   &:-ms-input-placeholder      {@content}
 }
 
-
-
 h1,
 .h1 {
   font-size: $font-size-h1;
   @extend %font-roboto-bold;
   margin: 0 0 10px 0;
 }
-
-
 
 h2,
 .h2 {

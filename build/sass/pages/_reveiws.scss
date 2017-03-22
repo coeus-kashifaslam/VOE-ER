@@ -100,14 +100,14 @@
 }
 
 
-.rating-listings{
+.rating-listings {
 	float: right;
 	ul{
 		li{
 			border-right: $border-grey  1px solid;
 			padding: 0 30px;
 
-			&:last-child(){
+			&:last-child {
 				border-right:0;
 			}
 
@@ -159,7 +159,7 @@
 		margin: 0 auto;
     	max-width: 300px;
 	}
-
+	
 	.recommendation-status{
 		width: 100%;
 		clear: both;
@@ -238,7 +238,7 @@
 		float: none;
 		ul{
 			li{
-				padding: 0 14px;
+				padding: 0 15px;
 				span{
 					strong{
 						display: block;

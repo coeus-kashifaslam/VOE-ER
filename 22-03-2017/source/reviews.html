@@ -1,0 +1,260 @@
+{% set bodyClass = "inner-pages review" %}
+{% extends 'template/_layout/default.html' %}
+{% set pageTitle = "Review Page" %}
+{% set dynamic = "../images/banner.jpg" %}
+
+{% block content %}
+
+{% include 'template/_components/inner-page-hero.html' %}
+
+<main class="site-main">
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <!-- Only for Mobile Screen side menu Start-->
+                <div class="col-md-12">
+                    <div class="col-md-12 visible-xs visible-sm MobileMenu">
+                    <div class="box no-b-p">
+                       <a class="submenu-link">Sub Menu</a>
+                        <div class="sub-menu-open" style="display:none;">
+                              <div class="col-md-12">
+                                <div class=" no-t-p no-b-p">
+                                    <div class="side-menu sprites">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon icon-overview"></span>
+                                                    <span class="menu-label">Overview</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-reviews"></span>
+                                                    <span class="menu-label">Reviews</span>
+                                                     <span class="pull-right numbers">78</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-salaries"></span>
+                                                    <span class="menu-label">Salaries</span>
+                                                    <span class="pull-right numbers">78</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon icon-jobs"></span>
+                                                    <span class="menu-label">Jobs</span>
+                                                    <span class="pull-right numbers">78</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-interveiws"></span>
+                                                    <span class="menu-label">Interviews</span>
+                                                    <span class="pull-right numbers">78</span>
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="#">
+                                                    <span class="icon icon-benifits"></span>
+                                                    <span class="menu-label">Interviews</span>
+                                                    <span class="pull-right numbers">78</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Only for Mobile Screen side menu Ends-->
+                <div class="col-md-3 visible-md visible-lg">
+                    <div class="box no-t-p no-b-p">
+                        <div class="side-menu sprites">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon icon-overview"></span>
+                                        <span class="menu-label">Overview</span>    
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="#">
+                                        <span class="icon icon-reviews"></span>
+                                        <span class="menu-label">Reviews</span>
+                                        <span class="pull-right numbers">78</span>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="#">
+                                        <span class="icon icon-salaries"></span>
+                                        <span class="menu-label">Salaries</span>
+                                        <span class="pull-right numbers">78</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon icon-jobs"></span>
+                                        <span class="menu-label">Jobs</span>
+                                        <span class="pull-right numbers">78</span>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="#">
+                                        <span class="icon icon-interveiws"></span>
+                                        <span class="menu-label">Interviews</span>
+                                        <span class="pull-right numbers">78</span>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="#">
+                                        <span class="icon icon-benifits"></span>
+                                        <span class="menu-label">Interviews</span>
+                                        <span class="pull-right numbers">78</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                     <div class="row mb30">
+                        <div class="col-md-12">
+                            <div class="box">
+                                <div class="reviews_paging">
+                                    <h2>eKomi Reviews</h2>
+                                    <div class="reviews_paging_footer clearfix">
+                                            <p class="pull-left reviews_paging_footer_label">Showing <strong>1–10 </strong> of <strong>724</strong> Companies</p>
+                                            <div class="pull-right clearfix sort_div">
+                                                <p class="pull-left sortby">Sort By: </p> 
+                                                <ul class="list-inline list__quick-link list__divider-bar">
+                                                    <li class="active"><a href="#">Popular</a></li>
+                                                    <li><a href="#">Rating</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb30">
+                        <div class="col-md-12">
+                            <div class="box clearfix">
+                                <div class="review-header-box clearfix">
+                                    <div class="logo_box pull-left">
+                                        <img src="images/ekomi-logo.png" alt="ekomi logo">
+                                    </div>
+                                    <div class="review-header pull-left">
+                                        <h3>eKomi</h3>
+                                        <p>
+                                            <a>www.abc.com</a> / Meridian, MS, United States
+                                        </p>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-green btn-small visible-sm visible-md">Add a Review</button>
+                                        <a href="" class="visible-xs addBtnMobile"><img src="images/addBtnMobile.png" alt="" /></a>
+                                    </div>
+                                </div>
+                                 <div class="review-content-box clearfix">
+                                    <div class="rating-section text-center">
+                                      <div class="star-rating-container">
+                                        <div class="star-full pull-left">
+                                            <div class="star-selected" style="width:72%">
+                                            </div>
+                                        </div>
+                                        <p class="rating-title"><strong>3/</strong>5</p> <br/>
+                                    </div>
+                                        <p class="recommendation-status"> 66% recommended to a friend</p>
+                                    </div>
+
+                                    <div class="rating-listings text-center">
+                                        <ul class="list-inline list__quick-link list__divider-bar">
+                                            <li>
+                                                <span class="icomoon-salary icon"></span>
+                                                <span class="rating-listings-content"><strong>22</strong> Salaries</span>
+                                            </li>
+                                             <li>
+                                                <span class="icomoon-review icon"></span>
+                                                <span class="rating-listings-content"><strong>22</strong> Reviews</span>
+                                            </li>
+                                             <li>
+                                                <span class="icomoon-interview icon"></span>
+                                                <span class="rating-listings-content"><strong>22</strong> Interviews</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                 </div>
+
+                                  <div class="review-footer-box clearfix">
+                                    <p><strong>“It was good”</strong></p>
+                                    <p>Nothing - it's phenomenally tough to make any money as if you manage to close a sale the price has to be droppedso significant that you essential.</p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb30">
+                        <div class="col-md-12">
+                            <div class="box clearfix">
+                                <div class="review-header-box clearfix">
+                                    <div class="logo_box pull-left">
+                                        <img src="images/ekomi-logo.png" alt="ekomi logo">
+                                    </div>
+                                    <div class="review-header pull-left">
+                                        <h3>eKomi</h3>
+                                        <p>
+                                            <a>www.abc.com</a> / Meridian, MS, United States
+                                        </p>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-green btn-small visible-sm visible-md">Add a Review</button>
+                                        <a href="" class="visible-xs addBtnMobile"><img src="images/addBtnMobile.png" alt="" /></a>
+                                    </div>
+                                </div>
+                                 <div class="review-content-box clearfix">
+                                    <div class="rating-section text-center">
+                                      <div class="star-rating-container">
+                                        <div class="star-full pull-left">
+                                            <div class="star-selected" style="width:72%">
+                                            </div>
+                                        </div>
+                                        <p class="rating-title"><strong>3/</strong>5</p> <br/>
+                                    </div>
+                                        <p class="recommendation-status"> 66% recommended to a friend</p>
+                                    </div>
+
+                                    <div class="rating-listings text-center">
+                                        <ul class="list-inline list__quick-link list__divider-bar">
+                                            <li>
+                                                <span class="icomoon-salary icon"></span>
+                                                <span class="rating-listings-content"><strong>22</strong> Salaries</span>
+                                            </li>
+                                             <li>
+                                                <span class="icomoon-review icon"></span>
+                                                <span class="rating-listings-content"><strong>22</strong> Reviews</span>
+                                            </li>
+                                             <li>
+                                                <span class="icomoon-interview icon"></span>
+                                                <span class="rating-listings-content"><strong>22</strong> Interviews</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                 </div>
+
+                                  <div class="review-footer-box clearfix">
+                                    <p><strong>“It was good”</strong></p>
+                                    <p>Nothing - it's phenomenally tough to make any money as if you manage to close a sale the price has to be droppedso significant that you essential.</p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

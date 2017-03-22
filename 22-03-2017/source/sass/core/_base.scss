@@ -1,0 +1,156 @@
+body {
+  background: $white;
+  
+    &.inner-pages{
+      background: $bg-color;
+
+      article.hero-article{
+        margin-top: 75px;
+        height: 270px;
+      }
+
+      .navbar-brand{
+        .without_white_header{
+          display: none;
+        }
+
+        .with_white_header{
+          display: block;
+        }
+      }
+      nav.navbar{
+        background: $white;
+        li{
+          &.nav-item__featured{
+            a{
+              color: $white;
+            }
+          }
+          a{
+            color: $light-black-color;
+          }
+        }
+      }
+
+      .site-main{
+        /*margin-top: 100px;*/
+      }
+    }
+}
+@media (min-width: 1199px) {
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  @extend %font-roboto-bold;
+  margin: 0 0 10px 0;
+}
+
+//Bar divider list
+.list__divider-bar {
+  > li {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 15px;
+    }
+    &:last-child {
+      padding-right: 0 !important;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+// white border rounded box-shadow: 
+  .box{
+    @include border-radius(5px);
+    background: $white;
+    box-shadow: 0 1px 1px rgba(0, 1, 1, .28);
+    border: $border-color 1px solid;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+
+  p{
+    color: $light-black-color;
+    font-size: $font-size-regular;
+    @extend %font-roboto-regular;
+    margin: 0 0 10px 0;
+  }
+
+
+  a{
+    color: $blue-color;
+    font-size: $font-size-regular;
+    @extend %font-roboto-regular;
+
+    &:hover, &:focus {
+        cursor: pointer;
+        text-decoration: none;
+    }
+  }
+
+  strong{
+    font-weight: bold;
+  }
+  .mb15{
+    margin-bottom: 15px;
+  }
+  .mb30{
+    margin-bottom: 30px;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pagingControls {
+    ul {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin: 5px -2px;
+            a {
+                background: #fff;
+                border: #f1eff1 1px solid;
+                padding: 5px 10px;
+                color: $light-black-color;
+                font-size: 14px;
+            }
+            &.active {
+                a {
+                    background: $default-theme;
+                    border: transparent 1px solid;
+                    color: $white;
+                }
+            }
+            &.prev,
+            &.next {
+                a {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+

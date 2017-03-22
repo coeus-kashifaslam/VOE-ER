@@ -6,6 +6,12 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
+%white-round-box {
+	background: #fff;
+	box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
