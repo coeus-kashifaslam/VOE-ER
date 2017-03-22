@@ -11,7 +11,7 @@
   position: absolute;
   width: 437px;
   left: 0;
-  top: 346px;
+  top: 254px;
   padding-top: 15px;
 
   .companyLogo{
@@ -242,6 +242,7 @@
 
 .hero-article__bg {
   .carousel-control {
+    margin-top: -30px;
     &.left,
     &.right {
       background: none;
@@ -302,5 +303,16 @@
 
   .carousel-control {
     z-index: 2;
+  }
+}
+
+@media (max-width: 1023px){
+  .hero-content-secton{
+    display: none;
+  }
+}
+@media (min-width: 1024px){
+  .hero-wrapper{
+    margin-top: -148px;
   }
 }
