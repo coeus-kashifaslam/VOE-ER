@@ -1,7 +1,7 @@
 .nav {
   li{
     a{
-      span{
+      .icomoon-employee, .icomoon-signin{
           font-family: 'icomoon-landing' !important;
         }
     }
@@ -35,12 +35,18 @@
     border: $border-grey 1px solid;
     top: 60px;
     left: -5px;
+    z-index: 100;
 
     li{
       border-bottom: $border-grey 1px solid;
       padding: 5px 10px;
       a{
         font-size: 16px;
+        span{
+          color: $review-content;
+          font-size: $font-size-regular;
+          @extend %font-roboto-regular;
+        }
       }
     } 
   }
@@ -203,7 +209,7 @@
       }
     }
     .navbar-fixed-top .navbar-collapse {
-      max-height: none;
+      max-height: auto;
     }
   }
 }
@@ -243,4 +249,24 @@ body {
       }
     }
   }
+}
+
+@media (max-width: 767px){
+  .nav .sub-dropdown{
+      position: static !important;
+      border: 0;
+      margin-left: 15px;
+
+      li{
+        border: 0;
+        padding: 15px 10px;
+      }
+    }
+  
+
+/*  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+    max-height: 100%;
+    overflow: visible;
+  }*/
+
 }
