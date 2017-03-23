@@ -13,6 +13,54 @@ body {
 		h3,h4,b {
 			@extend %font-roboto-bold;
 		}
+		.site-main {
+			margin-top: 38px;
+		}
+	}
+
+	// Teaser 
+	
+	.hero-article-review {
+		margin-top: 50px;
+		
+		.review-banner-wrapper {
+			
+			.company-info {
+				padding-left: 30px;
+				margin-top: -65px;
+
+				span {
+					display: table-cell;
+				}
+
+				.logo {
+					max-width: 140px;
+					padding: 20px;
+					
+					img {
+						vertical-align: middle;
+					}
+				}
+
+				.name {
+					font-size: 30px;
+					padding-left: 20px;
+					vertical-align: bottom;
+				}
+			}
+
+			.follow-n-review {
+				margin: 15px -15px 0 0;
+
+				.btn {
+					margin-left: 10px;
+
+					&.btn-success {
+						background: #29a00a;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -124,7 +172,7 @@ body {
                 }
             }
 		}
-
+		
 		.cons-pros {
 			margin: 0;
 			border-bottom: 1px solid #f1f1f1;
@@ -159,6 +207,21 @@ body {
 						color: #29a00a;
 						opacity: 0.5;
 					}
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+			.media-left, .media-right, .media-body {
+			    display: block;
+			    vertical-align: top;
+			}
+
+			.media-body {
+				width: auto;
+
+				.rating-info {
+					margin-top: 15px;
 				}
 			}
 		}

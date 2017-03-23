@@ -42,12 +42,24 @@
                 <li><a href="company-review.html">Company Reviews</a></li>
                 <li><a href="#">Salaries</a></li>
                 <li><a href="#">Interviews</a></li>
+                <li>
+                    <a href="#" class="employeedd"><span class="icomoon-employee"></span></a>
+                    <ul class="sub-dropdown">
+                        <li><a href="#">Sign In to Employer Centre</a></li>
+                        <li><a href="#">Contact Sale</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="employeedd"><span class="icomoon-signin"></span></a>
+                </li>
                 <li class="nav-item__featured"><a href="#">Write Review</a></li>
             </ul>
 
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
 
     
 
@@ -78,8 +90,32 @@
 		</div>
 	</div>
 </div> 
-<article class="hero-article">
-	<img src="../images/banner.jpg" alt="inner page banner"  />
+<article class="hero-article-review">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12">
+			<div class="review-banner-wrapper">
+				<div class="teaser">
+					<img src="images/banner-company-review.jpg" alt="banner" class="img-responsive">
+				</div>
+				<div class="company-profile">
+					<div class="col-md-6 pull-left">
+						<div class="company-info">
+							<span class="logo box"><img src="images/logo-ekomi.png" alt="ekomi" class="img-responsive"></span>
+							<span class="name"><h3>eKomi</h3></span>
+						</div>
+					</div>
+					<div class="col-md-6 pull-right">
+						<div class="follow-n-review text-right">
+							<a href="" class="btn btn-default">Follow</a>
+							<a href="" class="btn btn-success">Add Review</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
 </article>
 
 
@@ -457,6 +493,11 @@
             $('.sub-menu-open').slideToggle(function(){
             });
         });
+
+        $('.employeedd').click(function(){
+		    $('.sub-dropdown').slideToggle(function(){
+            });
+		});
     });
 </script>
 </body>

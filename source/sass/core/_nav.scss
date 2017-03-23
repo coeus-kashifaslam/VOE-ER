@@ -1,3 +1,12 @@
+.nav {
+  li{
+    a{
+      span{
+          font-family: 'icomoon-landing' !important;
+        }
+    }
+  }
+}
 .site-nav {
   @extend %nav-gradient;
   position: fixed;
@@ -15,6 +24,25 @@
     > .navbar-brand__mobile {
       display: none;
     }
+  }
+
+  .sub-dropdown{
+    display: none;
+    position: absolute;
+    min-width: 214px;
+    background: $white;
+    @include border-radius(5px);
+    border: $border-grey 1px solid;
+    top: 60px;
+    left: -5px;
+
+    li{
+      border-bottom: $border-grey 1px solid;
+      padding: 5px 10px;
+      a{
+        font-size: 16px;
+      }
+    } 
   }
 
   &.nav-scrolled {
@@ -189,6 +217,28 @@ body {
 
         &.img-responsive.navbar-brand__mobile {
           display: block;
+        }
+      }
+    }
+  }
+}
+
+.inner-pages {
+  .nav{
+    li{
+      a{
+        &:hover{
+          border-bottom:black 3px solid;
+        }
+      }
+
+      .sub-dropdown{
+        li{
+          a{
+            &:hover{
+              border-bottom:0;
+            }
+          }
         }
       }
     }

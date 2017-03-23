@@ -42,12 +42,24 @@
                 <li><a href="company-review.html">Company Reviews</a></li>
                 <li><a href="#">Salaries</a></li>
                 <li><a href="#">Interviews</a></li>
+                <li>
+                    <a href="#" class="employeedd"><span class="icomoon-employee"></span></a>
+                    <ul class="sub-dropdown">
+                        <li><a href="#">Sign In to Employer Centre</a></li>
+                        <li><a href="#">Contact Sale</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="employeedd"><span class="icomoon-signin"></span></a>
+                </li>
                 <li class="nav-item__featured"><a href="#">Write Review</a></li>
             </ul>
 
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
 
     
 <div class="search-wrapper">
@@ -78,7 +90,7 @@
 	</div>
 </div> 
 <article class="hero-article">
-	<img src="../images/banner.jpg" alt="inner page banner"  />
+	<img src="images/banner.jpg" alt="inner page banner"  />
 </article>
 
 
@@ -289,6 +301,11 @@
             $('.sub-menu-open').slideToggle(function(){
             });
         });
+
+        $('.employeedd').click(function(){
+		    $('.sub-dropdown').slideToggle(function(){
+            });
+		});
     });
 </script>
 </body>
