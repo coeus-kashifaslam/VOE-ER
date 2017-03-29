@@ -163,3 +163,30 @@ ul {
     overflow: hidden;
   }
 }
+
+@media  (max-width: 1366px){
+  html{
+     min-height: 100%;
+  }
+  body {
+     height: 100%;
+     margin: 0;
+  }
+  .wrapper {
+     min-height: 100%;
+
+     /* Equal to height of footer */
+     /* But also accounting for potential margin-bottom of last child */
+     margin-bottom: -170px;
+  }
+  footer,
+  .push {
+     height: 170px;
+  }
+}
+
+@media  (min-width: 1367px){
+  .wrapper{
+    min-height: 649px;
+  }
+}
