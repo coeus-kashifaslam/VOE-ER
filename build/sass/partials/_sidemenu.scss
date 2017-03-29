@@ -40,6 +40,14 @@
       }
     }
 
+    &.active{
+      a{
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+
     &:hover, &.active{
       cursor: pointer;
       a{ 
