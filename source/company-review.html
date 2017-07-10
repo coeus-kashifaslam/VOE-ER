@@ -153,11 +153,88 @@
                     </div> <!-- end eKomi Overview -->
                     <div class="row mb30">
                         <div class="col-md-12">
-                            <h3>eKomi Reviews</h3>
                             <div class="box eKomi-reviews">
-                                <div class="chart-box">
-                                    <img src="images/overall-rating.png" alt="overall-rating">
-                                </div><!-- overall rating -->
+                                <div class="box__header">
+                                    <h3 class="box__title">eKomi Reviews</h3>
+                                </div>
+                                <div class="chart-box reviews__chart-box">
+
+                                    <div class="ekomi-reviews__rating">
+                                        <div class="view__table">
+                                            <div class="view__table-cell">
+                                                <p>Overall Ratings: <strong>123456</strong></p>
+                                            </div>
+                                            <div class="view__table-cell view__table__rating-cell">
+                                                <div class="rating-section text-center">
+                                                    <div class="star-rating-container">
+                                                        <div class="star-full pull-left">
+                                                            <div class="star-selected" style="width:60%">
+                                                            </div>
+                                                        </div>
+                                                        <p class="rating-title"><strong>3/</strong>5</p> <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ekomi-reviews__intensity-map">
+                                        <ul class="list-inline intensity-list">
+                                            <li class="positive"><span>Positive: <strong>98%</strong></span></li>
+                                            <li class="neutral"><span>Neutral: <strong>98%</strong></span></li>
+                                            <li class="negative"><span>Negative: <strong>98%</strong></span></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="piechart-items">
+                                        <div class="col-sm-4">
+                                            <div class="piechart-item__container">
+                                                <div class="piechart-item">
+                                                    <div class="easypiechart" data-percent="61">
+                                                        <span class="percent">61</span>
+                                                    </div>
+                                                </div>
+                                                <div class="piechart__excerpt">
+                                                    <p>Recommend to a friend</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="piechart-item__container">
+                                                <div class="piechart-item">
+                                                    <div class="easypiechart" data-percent="50">
+                                                        <span class="percent">50</span>
+                                                    </div>
+                                                </div>
+                                                <div class="piechart__excerpt">
+                                                    <p>Approve of CEO</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="piechart-item__container">
+                                                <div class="piechart-item">
+                                                    <div class="easypiechart" data-percent="35">
+                                                        <img src="images/profile-avatar.png" alt="" class="piechart__user-thumbnail">
+                                                    </div>
+                                                </div>
+                                                <div class="piechart__excerpt">
+                                                    <p>Michael Ambros 35 Ratings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- overall rating -->
+
+                                <div class="reviews__chart-box__footer">
+                                    <p class="reviews__chart-box__footer-note footer__note-left">Average calculated from 7688 ratings (last 12 months)</p>
+                                    <p class="reviews__chart-box__footer-note footer__note-right"><a href="#"># View Rating Trends</a></p>
+                                </div>
                                 <div class="comment-box">
                                     <div class="col-md-12">
                                         <div class="media media-review">
