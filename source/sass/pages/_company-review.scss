@@ -116,7 +116,7 @@ body {
 
 	// Chart Box
 	.chart-box {
-		img {
+		> img {
 			width: 100%;
 			border-top-right-radius: 5px;
 			border-top-left-radius: 5px;
@@ -258,6 +258,205 @@ body {
 			.col-md-4,.col-lg-3 {
 				margin-bottom: 15px;
 			}
+		}
+	}
+}
+
+
+
+//Ekomi Reviews
+.reviews__chart-box {
+	@extend %blue-baner-gradient;
+	padding-top: 30px;
+	padding-bottom: 35px;
+	position: relative;
+}
+.piechart-item__container {
+	text-align: center;
+}
+.piechart-items {
+	margin-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.piechart__user-thumbnail {
+	border-radius: 50%;
+	height: 105px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 105px;
+}
+.piechart__excerpt {
+	p {
+		font-size: 14px;
+		color: white;
+		padding: 5px 0 0 0 !important;
+		margin-bottom: 0;
+	}
+}
+
+.reviews__chart-box__footer {
+	background: $reviews__footer-blue;
+	padding: 10px 15px;
+	position: relative;
+	font-size: 14px;
+	.footer__note-right {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		a {
+			color: white;
+			font-size: 14px;
+			text-decoration: underline;
+		}
+	}
+	.footer__note-left {
+		padding-right: 154px;
+	}
+}
+.eKomi-reviews {
+	.reviews__chart-box__footer {
+		p {
+			font-size: 14px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+.ekomi-reviews__intensity-map,
+.ekomi-reviews__rating {
+	padding: 7px 30px;
+	width: 75%;
+	margin: 0 auto;
+}
+.ekomi-reviews__rating {
+	border-radius: 5px 5px 0 0;
+	background: $reviews__footer-blue;
+	.star-full {
+		margin-bottom: 3px;
+	}
+	.view__table {
+		display: table;
+		width: 100%;
+		&-cell {
+			display: table-cell;
+			vertical-align: middle;
+          p {
+			  padding: 0 !important;
+			  color: white;
+			  margin-bottom: 0;
+		  }
+			.rating-title {
+				margin-left: 20px;
+				&, strong {
+					font-size: 18px;
+				}
+			}
+		}
+		.view__table__rating-cell {
+			text-align: right;
+			min-width: 235px;
+			.rating-section {
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+.ekomi-reviews__intensity-map {
+	background: $reviews__heat-map-blue;
+	border-radius: 0 0 5px 5px;
+	text-align: center;
+}
+.intensity-list {
+	margin: 0;
+	> li {
+		display: table-cell;
+		width: 1%;
+		vertical-align: middle;
+		text-align: center;
+		span {
+			position: relative;
+			padding-left: 15px;
+			&:before {
+				content: '';
+				width: 5px;
+				height: 5px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				border-radius: 50%;
+			}
+		}
+		&.positive {
+			span:before {
+				background: $positive;
+			}
+		}
+		&.neutral {
+			span:before {
+				background: $neutral;
+			}
+		}
+		&.negative {
+			span:before {
+				background: $negative;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.ekomi-reviews__intensity-map,
+	.ekomi-reviews__rating {
+		width: 95%;
+		padding: 7px 15px;
+	}
+	.ekomi-reviews__rating {
+		.view__table {
+		  display: block;
+		  &-cell {
+			  display: block;
+			  .rating-title {
+				  line-height: 36px;
+			  }
+		  }
+		  .view__table__rating-cell {
+			  text-align: initial
+		  }
+		  .rating-section {
+			  margin-top: 10px;
+			  margin-left: 0;
+		  }
+		}
+		.star-full {
+		  margin-bottom: 0;
+		  background-size: 100%;
+		  width: 195px;
+		}
+		.star-selected {
+		  background-size: 195px;
+		}
+	}
+	.intensity-list {
+		> li {
+			span {
+				padding-left: 10px;
+			}
+		}
+	}
+	.piechart-items {
+		.piechart-item__container {
+			margin-bottom: 20px;
 		}
 	}
 }

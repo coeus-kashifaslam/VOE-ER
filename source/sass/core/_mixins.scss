@@ -12,6 +12,17 @@
 	border-radius: 5px;
 }
 
+
+%blue-baner-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#18a2c6+0,1fbfd8+50,1fbfd8+50,18a2c6+100 */
+  background: rgb(24,162,198); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(24,162,198,1) 0%, rgba(31,191,216,1) 50%, rgba(31,191,216,1) 50%, rgba(24,162,198,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(24,162,198,1) 0%,rgba(31,191,216,1) 50%,rgba(31,191,216,1) 50%,rgba(24,162,198,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(24,162,198,1) 0%,rgba(31,191,216,1) 50%,rgba(31,191,216,1) 50%,rgba(24,162,198,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18a2c6', endColorstr='#18a2c6',GradientType=1 ); /* IE6-9 */
+
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
