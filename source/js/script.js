@@ -18,10 +18,12 @@
         scaleColor: false,
         trackColor: 'rgba(255,255,255,0.4)',
         lineWidth: 6,
-        animate: 2000,
-        easing: 'easeOutBounce',
+        animate: 3000,
         size: 115,
-        lineCap:'butt'
+        lineCap:'butt',
+        onStep: function(from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        }
     });
 
 })();
