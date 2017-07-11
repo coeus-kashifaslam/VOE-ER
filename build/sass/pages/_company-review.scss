@@ -75,13 +75,30 @@ body {
 
 		li {
 			display: block;
-			margin: 10px;
+			margin: 10px 10px 15px 10px;
 			font-size: 16px;
 
 			label {
 				min-width: 120px;
+				margin-bottom: 0;
 				font-weight: 700;
 				list-style-type: circle !important;
+			}
+		}
+
+		> li {
+			position: relative;
+			padding-left: 15px;
+			&:before {
+				content: '';
+				width: 5px;
+				height: 5px;
+				background: $text-dark;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
 			}
 		}
 	}
