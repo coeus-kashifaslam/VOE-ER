@@ -314,9 +314,6 @@ body {
 			text-decoration: underline;
 		}
 	}
-	.footer__note-left {
-		padding-right: 154px;
-	}
 }
 .eKomi-reviews {
 	.reviews__chart-box__footer {
@@ -324,6 +321,9 @@ body {
 			font-size: 14px;
 			padding: 0;
 			margin: 0;
+		}
+		.footer__note-left {
+			padding-right: 145px;
 		}
 	}
 }
@@ -459,12 +459,28 @@ body {
 			margin-bottom: 20px;
 		}
 	}
+
+	.reviews__chart-box__footer {
+		.footer__note-right {
+			position: static;
+			right: auto;
+			top: auto;
+			transform: none;
+			text-align: right;
+		}
+	}
+
+	.eKomi-reviews {
+		.reviews__chart-box__footer {
+			.footer__note-left {
+				padding-right: 0;
+			}
+		}
+	}
+
 }
 
 
 .box__headered {
 	padding-top: 0;
-	.banner__seal {
-
-	}
 }
