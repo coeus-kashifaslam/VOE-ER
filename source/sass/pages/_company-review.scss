@@ -83,6 +83,9 @@ body {
 				margin-bottom: 0;
 				font-weight: 700;
 				list-style-type: circle !important;
+				@media (max-width: 767px) {
+					display: block;
+				}
 			}
 		}
 
@@ -97,8 +100,7 @@ body {
 				border-radius: 50%;
 				position: absolute;
 				left: 0;
-				top: 50%;
-				transform: translateY(-50%);
+				top: 10px;
 			}
 		}
 	}
