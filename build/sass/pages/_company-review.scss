@@ -314,6 +314,9 @@ body {
 			text-decoration: underline;
 		}
 	}
+	.footer__note-left {
+		padding-right: ;
+	}
 }
 .eKomi-reviews {
 	.reviews__chart-box__footer {
@@ -406,6 +409,54 @@ body {
 			span:before {
 				background: $negative;
 			}
+		}
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.ekomi-reviews__intensity-map,
+	.ekomi-reviews__rating {
+		width: 95%;
+		padding: 7px 15px;
+	}
+	.ekomi-reviews__rating {
+		.view__table {
+		  display: block;
+		  &-cell {
+			  display: block;
+			  .rating-title {
+				  line-height: 36px;
+			  }
+		  }
+		  .view__table__rating-cell {
+			  text-align: initial
+		  }
+		  .rating-section {
+			  margin-top: 10px;
+			  margin-left: 0;
+		  }
+		}
+		.star-full {
+		  margin-bottom: 0;
+		  background-size: 100%;
+		  width: 195px;
+		}
+		.star-selected {
+		  background-size: 195px;
+		}
+	}
+	.intensity-list {
+		> li {
+			span {
+				padding-left: 10px;
+			}
+		}
+	}
+	.piechart-items {
+		.piechart-item__container {
+			margin-bottom: 20px;
 		}
 	}
 }
