@@ -1,0 +1,20 @@
+.banner__seal {
+  height: 150px;
+  border-radius: 5px 5px 0 0;
+}
+.seal__bg-color {
+  background: $seal-green url("../images/seal-bg.png") no-repeat center;
+}
+.banner__seal-award {
+  display: block;
+  text-align: center;
+  .seal-award__container {
+    margin-top: -15px;
+    display: inline-block;
+    min-width: 250px;
+    max-width: 350px;
+    img {
+      width: 100%;
+    }
+  }
+}
