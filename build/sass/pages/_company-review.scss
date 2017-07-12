@@ -34,11 +34,15 @@ body {
 				}
 
 				.logo {
-					max-width: 140px;
+					width: 140px;
+					height: 140px;
+					text-align: center;
+					vertical-align: middle;
 					padding: 20px;
 					
 					img {
 						vertical-align: middle;
+						margin: 0 auto;
 					}
 				}
 
@@ -68,11 +72,8 @@ body {
 .company-details {
 	border-bottom: #f4f4f4 1px solid;
 	ul {
-		display: inline-block;
 		padding: 10px;
 		margin: 0;
-		min-width: 49%;
-
 		li {
 			display: block;
 			margin: 10px 10px 15px 10px;
